@@ -1,0 +1,16 @@
+/home/alex/github/Bank/bin/Debug/net5.0/Bank
+/home/alex/github/Bank/bin/Debug/net5.0/Bank.deps.json
+/home/alex/github/Bank/bin/Debug/net5.0/Bank.runtimeconfig.json
+/home/alex/github/Bank/bin/Debug/net5.0/Bank.runtimeconfig.dev.json
+/home/alex/github/Bank/bin/Debug/net5.0/Bank.dll
+/home/alex/github/Bank/bin/Debug/net5.0/ref/Bank.dll
+/home/alex/github/Bank/bin/Debug/net5.0/Bank.pdb
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.csprojAssemblyReference.cache
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.GeneratedMSBuildEditorConfig.editorconfig
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.AssemblyInfoInputs.cache
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.AssemblyInfo.cs
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.csproj.CoreCompileInputs.cache
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.dll
+/home/alex/github/Bank/obj/Debug/net5.0/ref/Bank.dll
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.pdb
+/home/alex/github/Bank/obj/Debug/net5.0/Bank.genruntimeconfig.cache
