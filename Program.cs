@@ -1,12 +1,14 @@
 ﻿using System;
+using Services;
+using Model;
 
 namespace Bank
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine(4"Type an option:\n");
+            Console.WriteLine("Type an option:\n");
             Console.WriteLine("-------------");
             Console.WriteLine("1 - Deposit");
             Console.WriteLine("2 - Withdraw");
@@ -19,10 +21,10 @@ namespace Bank
             switch(input.KeyChar)
             {
                 case '1':
-                    Console.WriteLine("\nDeposit.");
+                    new CurrentAccount().ToWithdrawal();
                 break;
                 case '2':
-                    Console.WriteLine("\nWithdraw.");
+                    Console.WriteLine("test");
                 break;
                 case '3':
                     Console.WriteLine("\nTransfer.");
@@ -33,8 +35,9 @@ namespace Bank
                 case '5':
                     Console.WriteLine("\nPix.");
                 break;
-
             }
+            new Account().Owner();
+            new Account().Another();
         }
     }
 }
