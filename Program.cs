@@ -1,6 +1,7 @@
 ﻿using System;
-using Services;
+using Service;
 using Model;
+using Loop;
 
 namespace Bank
 {
@@ -10,7 +11,7 @@ namespace Bank
         {
             Console.WriteLine("Type an option:\n");
             Console.WriteLine("-------------");
-            Console.WriteLine("1 - Deposit");
+            Console.WriteLine("1 - Balance");
             Console.WriteLine("2 - Withdraw");
             Console.WriteLine("3 - Transfer");
             Console.WriteLine("4 - Deposit");
@@ -21,23 +22,36 @@ namespace Bank
             switch(input.KeyChar)
             {
                 case '1':
-                    new CurrentAccount().ToWithdrawal();
+                    new Load().Printing();
+                    new AccountService().ToBalance();
+                    new Account().Owner();
                 break;
                 case '2':
-                    Console.WriteLine("test");
+                    new AccountService().ToWithdrawal();
+                    new Load().Couting();
+                    Console.WriteLine("\nTake your money!");
                 break;
                 case '3':
-                    Console.WriteLine("\nTransfer.");
+                    new Load().Waiting();
+                    new AccountService().ToTransfer();
+                    Console.WriteLine("Transferred from");
+                    new Account().Owner();
+                    Console.WriteLine($"\nBenefited");
+                    new Account().Another();
                 break;
                 case '4':
-                    Console.WriteLine("\nDeposit.");
+                    new Load().Waiting();
+                    new AccountService().ToDeposit();
+                    Console.WriteLine($"\nDepositor");
+                    new Account().Owner();
+                    Console.WriteLine($"\nBenefited");
+                    new Account().Another();
+
                 break;
                 case '5':
                     Console.WriteLine("\nPix.");
                 break;
             }
-            new Account().Owner();
-            new Account().Another();
         }
     }
 }
