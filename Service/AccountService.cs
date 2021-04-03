@@ -1,4 +1,5 @@
 using System;
+using Loop;
 
 namespace Service
 {
@@ -41,10 +42,28 @@ namespace Service
             transferred = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"You transferred: ${transferred}");
             Console.WriteLine($"\nBalance: ${balance - transferred}");
-        } 
+        } bool
         public void ToBalance()
         {
-            Console.Write($"\n\nBalance: ${balance - withdrawed - transferred + deposited}\n");
-        }  
+            int id = 1;
+
+            const string ag = "Agency: 0001",
+            nm = "Alex Cesar da Silva", 
+            ph = "Phone number: 47-96586662",
+            ad = "Blumenau-SC, Brasil",
+            ac = "account: 3270000-4",
+            bk = "PandaBank";
+
+            Console.Write("\nType your cpf, only numbers: ");
+            var cpf = Console.ReadKey(); 
+            if (cpf.KeyChar == id)
+            {
+                new Load().Printing();
+                Console.Write($"\n\nBalance: ${balance - withdrawed - transferred + deposited}\n");
+                Console.WriteLine("----------------------------");
+                Console.Write($"{nm}\n{ag}\n{ac}\n{ph}\n{ad}\n{bk}\n");
+                Console.WriteLine("----------------------------");
+            }
+        }
     }
 }

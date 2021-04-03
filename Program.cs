@@ -22,9 +22,10 @@ namespace Bank
             switch(input.KeyChar)
             {
                 case '1':
-                    new Load().Printing();
                     new AccountService().ToBalance();
-                    new Account().Owner();
+                    
+                    // new AccountService().ToBalance();
+                    // new Account().Id();
                 break;
                 case '2':
                     new AccountService().ToWithdrawal();
@@ -35,7 +36,7 @@ namespace Bank
                     new Load().Waiting();
                     new AccountService().ToTransfer();
                     Console.WriteLine("Transferred from");
-                    new Account().Owner();
+                    // new Account().Owner();
                     Console.WriteLine($"\nBenefited");
                     new Account().Another();
                 break;
@@ -43,7 +44,7 @@ namespace Bank
                     new Load().Waiting();
                     new AccountService().ToDeposit();
                     Console.WriteLine($"\nDepositor");
-                    new Account().Owner();
+                    // new Account().Owner();
                     Console.WriteLine($"\nBenefited");
                     new Account().Another();
 

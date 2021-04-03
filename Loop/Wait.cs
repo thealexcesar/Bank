@@ -3,19 +3,7 @@ using System.Threading;
 
 namespace Loop
 {
-    public class IfElse
-    {
-        long id = 08782255601, cpf;
-        public void Id()
-        {
-            cpf = Console.ReadLine();
-            while (cpf == id)
-            {
-
-            }
-        }
-    }
-    public class Load
+       public class Load
     {
         public void Couting()
         {

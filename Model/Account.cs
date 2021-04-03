@@ -4,23 +4,10 @@ namespace Model
 {
     public class Account
     {
+        
         public double Withdrawal {get; set;}
         public double Balance {get; set;}
         
-        // Data Clients
-        public void Owner()
-        {
-            const string ag = "Agency: 0001",
-            nm = "Name: Alex Cesar da Silva", 
-            ph = "Phone number: 47-96586662",
-            ad = "Address: Blumenau-SC, Brasil",
-            ac = "Current account: 3270000-4",
-            bk = "Bank: PandaBank";
-
-            Console.WriteLine("----------------------------");
-            Console.Write($"{nm}\n{ag}\n{ac}\n{ph}\n{ad}\n{bk}\n");
-            Console.WriteLine("----------------------------");
-        }
         public void Another()
         {
             const string ag1 = "Agency: 0002",
